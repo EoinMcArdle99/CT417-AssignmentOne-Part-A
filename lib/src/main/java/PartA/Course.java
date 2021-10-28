@@ -60,8 +60,9 @@ public class Course {
         StringBuilder str = new StringBuilder("Course: " + name + "\n");
         str.append("Modules:\n");
         for(Module module : modules) {
-            str.append("\n\t");
+            str.append("\t");
             str.append(module);
+            str.append("\n");
         }
         return str.toString();
     }
